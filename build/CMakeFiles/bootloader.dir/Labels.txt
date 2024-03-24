@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/CMakeFiles/bootloader
+/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/CMakeFiles/bootloader.rule
+/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/CMakeFiles/bootloader-complete.rule
+/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule
+/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
