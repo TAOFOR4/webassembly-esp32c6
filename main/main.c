@@ -9,6 +9,7 @@
 #include "wasm_export.h"
 #include "bh_platform.h"
 #include "test_wasm.h"
+#include "esp_timer.h" // Include the ESP timer library
 
 #include "esp_log.h"
 
@@ -26,8 +27,8 @@ static void *app_instance_main(wasm_module_inst_t module_inst)
 
 void *iwasm_main(void *arg)
 {
-    (void)arg; /* unused */
-    /* setup variables for instantiating and running the wasm module */
+    (void)arg; // unused
+    // setup variables for instantiating and running the wasm module
     uint8_t *wasm_file_buf = NULL;
     unsigned wasm_file_buf_size = 0;
     wasm_module_t wasm_module = NULL;
@@ -36,7 +37,7 @@ void *iwasm_main(void *arg)
     void *ret;
     RuntimeInitArgs init_args;
 
-    /* configure memory allocation */
+    // configure memory allocation
     memset(&init_args, 0, sizeof(RuntimeInitArgs));
     init_args.mem_alloc_type = Alloc_With_Allocator;
     init_args.mem_alloc_option.allocator.malloc_func = (void *)os_malloc;
@@ -44,7 +45,7 @@ void *iwasm_main(void *arg)
     init_args.mem_alloc_option.allocator.free_func = (void *)os_free;
 
     ESP_LOGI(LOG_TAG, "Initialize WASM runtime");
-    /* initialize runtime environment */
+    // initialize runtime environment
     if (!wasm_runtime_full_init(&init_args))
     {
         ESP_LOGE(LOG_TAG, "Init runtime failed.");
@@ -56,7 +57,7 @@ void *iwasm_main(void *arg)
     wasm_file_buf = (uint8_t *)wasm_test_file_interp;
     wasm_file_buf_size = sizeof(wasm_test_file_interp);
 
-    /* load WASM module */
+    // load WASM module
     if (!(wasm_module = wasm_runtime_load(wasm_file_buf, wasm_file_buf_size,
                                           error_buf, sizeof(error_buf))))
     {
@@ -74,21 +75,27 @@ void *iwasm_main(void *arg)
         goto fail2interp;
     }
 
+    int64_t startTime = esp_timer_get_time(); // Capture start time
+
     ESP_LOGI(LOG_TAG, "run main() of the application");
     ret = app_instance_main(wasm_module_inst);
     assert(!ret);
 
-    /* destroy the module instance */
+    int64_t endTime = esp_timer_get_time();      // Capture end time
+    int64_t executionTime = endTime - startTime; // Calculate execution time
+    ESP_LOGI(LOG_TAG, "Execution time: %lld microseconds", executionTime);
+
+    // destroy the module instance
     ESP_LOGI(LOG_TAG, "Deinstantiate WASM runtime");
     wasm_runtime_deinstantiate(wasm_module_inst);
 
 fail2interp:
-    /* unload the module */
+    // unload the module
     ESP_LOGI(LOG_TAG, "Unload WASM module");
     wasm_runtime_unload(wasm_module);
 
 fail1interp:
-    /* destroy runtime environment */
+    // destroy runtime environment
     ESP_LOGI(LOG_TAG, "Destroy WASM runtime");
     wasm_runtime_destroy();
 
