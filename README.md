@@ -60,3 +60,24 @@ $ ./build_and_run.sh
 ```
 $ idf.py monitor
 ```
+
+## Result analysis
+
+### Execution time measurement
+```
+$ python capture_execution_time.py
+```
+Then check the output file 'capture_execution_time.txt'
+
+### Memory storage measurement
+```
+$ python capture_memory_storage.py
+```
+Then check the output file 'capture_memory_storage.txt'
+
+### Energy consumption measurement
+
+Still ongoing. Two methods:
+1. The easiest approach would be to let the device run and monitor your battery voltage, something similar to [here](https://youtu.be/auiSyk2TEjE?list=PL7aXQYRxV3CyFQ91YNUJk4Hl6IIblR_CP)
+2. The more advanced way would be to invest in a device which can measure the current so that the user can do the calculation and estimate the power consumption. An example of using [Power Profiler Kit II from Nordic](https://youtu.be/LUB8RWzzLWc?list=PLOZhYVJgDmNRMSsoeJaM2o1eCSjZr4ckF)
+
