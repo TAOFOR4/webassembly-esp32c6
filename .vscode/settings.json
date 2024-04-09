@@ -1,4 +1,9 @@
 {
     "idf.adapterTargetName": "esp32c6",
-    "idf.port": "/dev/ttyUSB0"
+    "idf.port": "/dev/ttyUSB0",
+    "files.associations": {
+        "stdint.h": "c",
+        "stdio.h": "c",
+        "string.h": "c"
+    }
 }

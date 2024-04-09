@@ -60,7 +60,7 @@ EQUALS = =
 CMAKE_SOURCE_DIR = /home/tao/wasm-micro-runtime/test-tools/binarydump-tool
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/hello-wasm-rs/build
+CMAKE_BINARY_DIR = /home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/esp32c6-wasm-rs/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/hello-wasm-rs/build/CMakeFiles /home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/hello-wasm-rs/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/esp32c6-wasm-rs/build/CMakeFiles /home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/esp32c6-wasm-rs/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/hello-wasm-rs/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/esp32c6-wasm-rs/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
