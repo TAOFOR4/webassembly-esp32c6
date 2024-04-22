@@ -1,23 +1,39 @@
-
 #!/bin/bash
 
-# Compile Rust code to WebAssembly
-echo "Compiling Rust code to WebAssembly..."
-# 32kb stack size
-rustc -C opt-level=z -C lto -C codegen-units=1 -C panic=abort -C link-self-contained=no -C link-args=-zstack-size=32768 -C link-args=--no-entry --target wasm32-wasi main.rs 
+# Compile the Rust code to WASM using optimized settings
+rustc -C debuginfo=0 -C opt-level=3 -C panic=abort -C link-self-contained=no -C link-args=-zstack-size=32768 -C link-args=--no-entry --target wasm32-wasi main.rs
 
-wasm-opt -Oz main.wasm -o main_optimized.wasm
+# Check if compilation was successful
+if [ $? -ne 0 ]; then
+    echo "Compilation failed"
+    exit 1
+fi
 
+echo "Optimize the WASM binary"
+wasm-opt -Oz main.wasm -o main.wasm
 
-# Build the binarydump tool
-echo "Building binarydump tool..."
-rm -fr build && mkdir build && cd build
-cmake $WAMR_PATH/test-tools/binarydump-tool 
-make 
-cd ..
+# Check if wasm-opt operation was successful
+if [ $? -ne 0 ]; then
+    echo "Failed to optimize WASM"
+    exit 1
+fi
 
-# Generate C header from the WASM binary
-echo "Generating C header..."
-./build/binarydump -o ../main/test_wasm.h -n wasm_test_file_interp ../main_optimized.wasm 
+echo "Generate readable wasm file"
+wasm2wat main.wasm -o readable_module.wat
+
+# Check if the wasm2wat conversion was successful
+if [ $? -ne 0 ]; then
+    echo "Failed to convert WASM to WAT"
+    exit 1
+fi
+
+echo "Generate C header file from the optimized WASM"
+xxd -i main.wasm ../c_header/test_wasm.h
+
+# Check if the xxd operation was successful
+if [ $? -ne 0 ]; then
+    echo "Failed to generate C header file"
+    exit 1
+fi
 
 echo "Done"

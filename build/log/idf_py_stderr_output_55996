@@ -14,3 +14,4 @@
      Reference types disabled
      GC performance profiling disabled
      Quick AOT/JIT entries enabled
+     AOT intrinsics enabled

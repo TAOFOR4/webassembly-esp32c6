@@ -2,7 +2,8 @@
 This is a experiment for running wasm (webassembly) on esp32c6.
 
 ## webassembly runtime
-[wasm-micro-runtime ](https://github.com/bytecodealliance/wasm-micro-runtime) has supported ESP32 ,ESP32C3 ,ESP32S3 ,ESP32C6
+1. [wasm-micro-runtime ](https://github.com/bytecodealliance/wasm-micro-runtime) has supported ESP32 ,ESP32C3 ,ESP32S3 ,ESP32C6
+2. [wasm3](https://github.com/wasm3/wasm3/tree/main) todo: check if it supports C6
 
 ## Hardware selection
 I am using ESP32C6 :)
@@ -10,6 +11,8 @@ I am using ESP32C6 :)
 ESP32 ,ESP32C3 ,ESP32S3 also works.
 
 ## Software setup
+
+### wamr
 - Setup `esp-idf` toolchain using the instructions [here](https://docs.espressif.com/projects/esp-idf/en/latest/esp32/get-started/linux-macos-setup.html). Make sure that you add `IDF_PATH` to your user profile as mentioned [here](https://docs.espressif.com/projects/esp-idf/en/v3.3.1/get-started/add-idf_path-to-profile.html).
 - Clone `wasm-micro-runtime` from [here](https://github.com/bytecodealliance/wasm-micro-runtime). Set `WAMR_PATH` to this path in your user profile.
 - Install `wasi-sdk` as mentioned [here](https://github.com/WebAssembly/wasi-sdk).
@@ -20,6 +23,10 @@ ESP32 ,ESP32C3 ,ESP32S3 also works.
 - Install `wasi-sdk` as mentioned [here](https://github.com/WebAssembly/wasi-sdk).
     - Its okay to use release downloads but it didn't work for me on Linux. I had to compile it.
     - Set `WASI_SDK_PATH` in your profile correctly to the folder where the artifacts are untar'ed.
+
+### wasm3
+- Clone Wasm3 engine `git clone --depth=1 https://github.com/wasm3/wasm3.git ./wasm3`
+- todo: add more details
 
 
 ## Tutorial

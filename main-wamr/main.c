@@ -8,7 +8,7 @@
 #include "freertos/task.h"
 #include "wasm_export.h"
 #include "bh_platform.h"
-#include "test_wasm.h"
+#include "c_header/test_wasm.h"
 #include "esp_timer.h" // Include the ESP timer library
 
 #include "esp_log.h"
@@ -54,8 +54,9 @@ void *iwasm_main(void *arg)
 
     ESP_LOGI(LOG_TAG, "Run wamr with interpreter");
 
-    wasm_file_buf = (uint8_t *)wasm_test_file_interp;
-    wasm_file_buf_size = sizeof(wasm_test_file_interp);
+    wasm_file_buf = (uint8_t *)main_wasm;
+    wasm_file_buf_size = sizeof(main_wasm);
+    // wasm_file_buf_size = main_wasm_len;
 
     // load WASM module
     if (!(wasm_module = wasm_runtime_load(wasm_file_buf, wasm_file_buf_size,

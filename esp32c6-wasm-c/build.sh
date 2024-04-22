@@ -20,6 +20,6 @@ make
 cd ..
 
 echo "Generate test_wasm.h .."
-./build/binarydump -o ../main/test_wasm.h -n wasm_test_file_interp test.wasm
+./build/binarydump -o ../c_header/test_wasm.h -n wasm_test_file_interp test.wasm
 
 echo "Done"

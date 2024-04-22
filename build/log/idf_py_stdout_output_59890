@@ -1,10 +1,10 @@
 [0/1] cd /home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build && /home/tao/.espressif/tools/cmake/3.24.0/bin/cmake -D "IDF_SIZE_TOOL=/home/tao/.espressif/python_env/idf5.2_py3.10_env/bin/python;-m;esp_idf_size" -D MAP_FILE=/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/wamr-simple.map -D OUTPUT_JSON= -P /opt/esp/v5.2.1/esp-idf/tools/cmake/run_size_tool.cmake
 Total sizes:
-Used stat D/IRAM:   56792 bytes ( 395320 remain, 12.6% used)
-      .data size:    8654 bytes
-      .bss  size:    4144 bytes
+Used stat D/IRAM:   56448 bytes ( 395664 remain, 12.5% used)
+      .data size:    8302 bytes
+      .bss  size:    4152 bytes
       .text size:   43994 bytes
-Used Flash size :  202260 bytes
-           .text:  159884 bytes
-         .rodata:   42120 bytes
-Total image size:  254908 bytes (.bin may be padded larger)
+Used Flash size :  203346 bytes
+           .text:  160834 bytes
+         .rodata:   42256 bytes
+Total image size:  255642 bytes (.bin may be padded larger)
