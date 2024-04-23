@@ -1,0 +1,3 @@
+/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/esp32c6-wasm-c/build/CMakeFiles/binarydump.dir
+/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/esp32c6-wasm-c/build/CMakeFiles/edit_cache.dir
+/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/esp32c6-wasm-c/build/CMakeFiles/rebuild_cache.dir
