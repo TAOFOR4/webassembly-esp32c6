@@ -5,18 +5,18 @@ cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
   "/opt/esp/v5.2.1/esp-idf/components/bootloader/subproject"
-  "/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/bootloader"
-  "/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/bootloader-prefix"
-  "/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/bootloader-prefix/tmp"
-  "/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/bootloader-prefix/src/bootloader-stamp"
-  "/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/bootloader-prefix/src"
-  "/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/bootloader-prefix/src/bootloader-stamp"
+  "/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/bootloader"
+  "/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/bootloader-prefix"
+  "/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/bootloader-prefix/tmp"
+  "/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/bootloader-prefix/src/bootloader-stamp"
+  "/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/bootloader-prefix/src"
+  "/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()

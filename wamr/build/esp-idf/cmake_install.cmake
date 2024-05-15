@@ -39,166 +39,161 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/esp-idf/riscv/cmake_install.cmake")
+  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/riscv/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/esp-idf/esp_ringbuf/cmake_install.cmake")
+  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/esp_ringbuf/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/esp-idf/efuse/cmake_install.cmake")
+  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/efuse/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/esp-idf/esp_timer/cmake_install.cmake")
+  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/esp_timer/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/esp-idf/esp_mm/cmake_install.cmake")
+  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/esp_mm/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/esp-idf/driver/cmake_install.cmake")
+  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/driver/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/esp-idf/esp_pm/cmake_install.cmake")
+  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/esp_pm/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/esp-idf/mbedtls/cmake_install.cmake")
+  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/mbedtls/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/esp-idf/esp_bootloader_format/cmake_install.cmake")
+  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/esp_bootloader_format/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/esp-idf/esp_app_format/cmake_install.cmake")
+  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/esp_app_format/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/esp-idf/bootloader_support/cmake_install.cmake")
+  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/bootloader_support/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/esp-idf/partition_table/cmake_install.cmake")
+  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/partition_table/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/esp-idf/esp_partition/cmake_install.cmake")
+  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/esp_partition/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/esp-idf/app_update/cmake_install.cmake")
+  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/app_update/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/esp-idf/spi_flash/cmake_install.cmake")
+  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/spi_flash/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/esp-idf/pthread/cmake_install.cmake")
+  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/pthread/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/esp-idf/esp_system/cmake_install.cmake")
+  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/esp_system/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/esp-idf/esp_common/cmake_install.cmake")
+  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/esp_common/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/esp-idf/esp_rom/cmake_install.cmake")
+  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/esp_rom/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/esp-idf/hal/cmake_install.cmake")
+  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/hal/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/esp-idf/log/cmake_install.cmake")
+  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/log/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/esp-idf/heap/cmake_install.cmake")
+  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/heap/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/esp-idf/soc/cmake_install.cmake")
+  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/soc/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/esp-idf/esp_hw_support/cmake_install.cmake")
+  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/esp_hw_support/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/esp-idf/freertos/cmake_install.cmake")
+  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/freertos/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/esp-idf/newlib/cmake_install.cmake")
+  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/newlib/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/esp-idf/cxx/cmake_install.cmake")
+  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/cxx/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/esp-idf/bootloader/cmake_install.cmake")
+  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/bootloader/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/esp-idf/esptool_py/cmake_install.cmake")
+  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/esptool_py/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/esp-idf/vfs/cmake_install.cmake")
+  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/vfs/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/esp-idf/lwip/cmake_install.cmake")
+  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/lwip/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/esp-idf/wamr/cmake_install.cmake")
-endif()
-
-if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for the subdirectory.
-  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/esp-idf/main/cmake_install.cmake")
+  include("/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/wamr/cmake_install.cmake")
 endif()
 

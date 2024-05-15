@@ -1,0 +1,15 @@
+dependencies:
+  idf:
+    component_hash: null
+    source:
+      type: idf
+    version: 5.2.1
+  wasm-micro-runtime:
+    component_hash: null
+    source:
+      path: /home/tao/wasm-micro-runtime
+      type: local
+    version: 2.0.0
+manifest_hash: 9a69321afd2bc5e9abbcd515bc419ce25db36a8d1bab9ccfef7b6ab6579017b5
+target: esp32c6
+version: 1.0.0

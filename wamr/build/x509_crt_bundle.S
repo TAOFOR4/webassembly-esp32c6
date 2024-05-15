@@ -1,4 +1,4 @@
-/* * Data converted from /home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/build/esp-idf/mbedtls/x509_crt_bundle
+/* * Data converted from /home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/mbedtls/x509_crt_bundle
  */
 .data
 .section .rodata.embedded
