@@ -10,6 +10,6 @@ dependencies:
       path: /home/tao/wasm-micro-runtime
       type: local
     version: 2.0.0
-manifest_hash: 9a69321afd2bc5e9abbcd515bc419ce25db36a8d1bab9ccfef7b6ab6579017b5
+manifest_hash: 34651d513d7f9da8ef9e80c953183d674fbbbad9a828d4d95ddebc688783062a
 target: esp32c6
 version: 1.0.0

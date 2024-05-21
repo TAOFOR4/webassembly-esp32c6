@@ -1,4 +1,12 @@
-// src/main.rs
+#![no_std]
+#![no_main]
+
+use core::panic::PanicInfo;
+
+#[panic_handler]
+fn panic(_info: &PanicInfo) -> ! {
+    loop {}
+}
 
 fn fibonacci(n: u32) -> u32 {
     let mut a = 0;
@@ -14,7 +22,9 @@ fn fibonacci(n: u32) -> u32 {
     a
 }
 
-fn main() {
+#[no_mangle]
+pub extern "C" fn main() -> u32 {
     let n = 20;
-    println!("Fibonacci {}: {}", n, fibonacci(n));
+    let result = fibonacci(n);
+    result // Ensure the result of the Fibonacci function is returned from main
 }

@@ -1,0 +1,1 @@
+wasm3 can't use the 'printf' directly so all the projects lack of 'printf' and can only get the value from 'return'.

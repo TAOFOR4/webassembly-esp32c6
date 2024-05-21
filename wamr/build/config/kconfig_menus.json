@@ -27043,6 +27043,206 @@
                 "id": "component-config-wi-fi-provisioning-manager",
                 "title": "Wi-Fi Provisioning Manager",
                 "type": "menu"
+            },
+            {
+                "children": [
+                    {
+                        "children": [
+                            {
+                                "children": [],
+                                "depends_on": "<choice WAMR_BUILD_TYPE>",
+                                "help": null,
+                                "id": "WAMR_BUILD_RELEASE",
+                                "name": "WAMR_BUILD_RELEASE",
+                                "range": null,
+                                "title": "Release",
+                                "type": "bool"
+                            },
+                            {
+                                "children": [],
+                                "depends_on": "<choice WAMR_BUILD_TYPE>",
+                                "help": null,
+                                "id": "WAMR_BUILD_DEBUG",
+                                "name": "WAMR_BUILD_DEBUG",
+                                "range": null,
+                                "title": "Debug",
+                                "type": "bool"
+                            }
+                        ],
+                        "depends_on": null,
+                        "help": null,
+                        "id": "component-config-wasm-micro-runtime-build-type",
+                        "name": "WAMR_BUILD_TYPE",
+                        "title": "Build type",
+                        "type": "choice"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": null,
+                        "id": "WAMR_ENABLE_AOT",
+                        "name": "WAMR_ENABLE_AOT",
+                        "range": null,
+                        "title": "AOT",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [
+                            {
+                                "children": [
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice WAMR_INTERP_MODE>",
+                                        "help": null,
+                                        "id": "WAMR_INTERP_CLASSIC",
+                                        "name": "WAMR_INTERP_CLASSIC",
+                                        "range": null,
+                                        "title": "Classic",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice WAMR_INTERP_MODE>",
+                                        "help": null,
+                                        "id": "WAMR_INTERP_FAST",
+                                        "name": "WAMR_INTERP_FAST",
+                                        "range": null,
+                                        "title": "Fast",
+                                        "type": "bool"
+                                    }
+                                ],
+                                "depends_on": "WAMR_ENABLE_INTERP",
+                                "help": null,
+                                "id": "component-config-wasm-micro-runtime-interpreter-interpreter-mode",
+                                "name": "WAMR_INTERP_MODE",
+                                "title": "Interpreter mode",
+                                "type": "choice"
+                            },
+                            {
+                                "children": [
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice WAMR_INTERP_LOADER_MODE>",
+                                        "help": null,
+                                        "id": "WAMR_INTERP_LOADER_NORMAL",
+                                        "name": "WAMR_INTERP_LOADER_NORMAL",
+                                        "range": null,
+                                        "title": "Normal",
+                                        "type": "bool"
+                                    },
+                                    {
+                                        "children": [],
+                                        "depends_on": "<choice WAMR_INTERP_LOADER_MODE>",
+                                        "help": null,
+                                        "id": "WAMR_INTERP_LOADER_MINI",
+                                        "name": "WAMR_INTERP_LOADER_MINI",
+                                        "range": null,
+                                        "title": "Mini",
+                                        "type": "bool"
+                                    }
+                                ],
+                                "depends_on": "WAMR_ENABLE_INTERP",
+                                "help": null,
+                                "id": "component-config-wasm-micro-runtime-interpreter-loader-mode",
+                                "name": "WAMR_INTERP_LOADER_MODE",
+                                "title": "Loader mode",
+                                "type": "choice"
+                            }
+                        ],
+                        "depends_on": null,
+                        "help": null,
+                        "id": "WAMR_ENABLE_INTERP",
+                        "is_menuconfig": true,
+                        "name": "WAMR_ENABLE_INTERP",
+                        "range": null,
+                        "title": "Interpreter",
+                        "type": "menu"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": null,
+                        "id": "WAMR_ENABLE_LIB_PTHREAD",
+                        "name": "WAMR_ENABLE_LIB_PTHREAD",
+                        "range": null,
+                        "title": "Lib pthread",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": null,
+                        "id": "WAMR_ENABLE_LIBC_BUILTIN",
+                        "name": "WAMR_ENABLE_LIBC_BUILTIN",
+                        "range": null,
+                        "title": "Libc builtin",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": null,
+                        "id": "WAMR_ENABLE_LIBC_WASI",
+                        "name": "WAMR_ENABLE_LIBC_WASI",
+                        "range": null,
+                        "title": "Libc WASI",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": null,
+                        "id": "WAMR_ENABLE_MEMORY_PROFILING",
+                        "name": "WAMR_ENABLE_MEMORY_PROFILING",
+                        "range": null,
+                        "title": "Memory profiling",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": null,
+                        "id": "WAMR_ENABLE_MULTI_MODULE",
+                        "name": "WAMR_ENABLE_MULTI_MODULE",
+                        "range": null,
+                        "title": "Multi module",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": null,
+                        "id": "WAMR_ENABLE_PERF_PROFILING",
+                        "name": "WAMR_ENABLE_PERF_PROFILING",
+                        "range": null,
+                        "title": "Performance profiling",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": null,
+                        "id": "WAMR_ENABLE_REF_TYPES",
+                        "name": "WAMR_ENABLE_REF_TYPES",
+                        "range": null,
+                        "title": "Reference types",
+                        "type": "bool"
+                    },
+                    {
+                        "children": [],
+                        "depends_on": null,
+                        "help": null,
+                        "id": "WAMR_ENABLE_SHARED_MEMORY",
+                        "name": "WAMR_ENABLE_SHARED_MEMORY",
+                        "range": null,
+                        "title": "Shared memory",
+                        "type": "bool"
+                    }
+                ],
+                "depends_on": null,
+                "id": "component-config-wasm-micro-runtime",
+                "title": "WASM Micro Runtime",
+                "type": "menu"
             }
         ],
         "depends_on": null,

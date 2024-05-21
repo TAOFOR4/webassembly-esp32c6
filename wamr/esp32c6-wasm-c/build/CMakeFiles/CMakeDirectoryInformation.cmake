@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 set(CMAKE_RELATIVE_PATH_TOP_SOURCE "/home/tao/wasm-micro-runtime/test-tools/binarydump-tool")
-set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/esp32c6-wasm-c/build")
+set(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/esp32c6-wasm-c/build")
 
 # Force unix paths in dependencies.
 set(CMAKE_FORCE_UNIX_PATHS 1)

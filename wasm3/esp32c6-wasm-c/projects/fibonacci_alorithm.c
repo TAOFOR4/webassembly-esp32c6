@@ -9,11 +9,3 @@ int fib(int n)
         return n;
     return fib(n - 1) + fib(n - 2);
 }
-
-int main()
-{
-    int result = fib(6); // Change this number based on your test needs
-    printf("The result is %d", result);
-
-    return 0;
-}

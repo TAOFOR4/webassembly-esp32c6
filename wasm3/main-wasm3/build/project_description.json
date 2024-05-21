@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "wasm3",
-    "project_version":    "f517370-dirty",
+    "project_version":    "c37c6ee-dirty",
     "project_path":       "/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wasm3/main-wasm3",
     "idf_path":           "/opt/esp/v5.2.1/esp-idf",
     "build_dir":          "/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wasm3/main-wasm3/build",

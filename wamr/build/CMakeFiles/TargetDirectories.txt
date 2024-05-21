@@ -622,3 +622,17 @@
 /home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/wifi_provisioning/CMakeFiles/install.dir
 /home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/wifi_provisioning/CMakeFiles/install/local.dir
 /home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/wifi_provisioning/CMakeFiles/install/strip.dir
+/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/wasm-micro-runtime/CMakeFiles/__idf_wasm-micro-runtime.dir
+/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/wasm-micro-runtime/CMakeFiles/edit_cache.dir
+/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/wasm-micro-runtime/CMakeFiles/rebuild_cache.dir
+/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/wasm-micro-runtime/CMakeFiles/list_install_components.dir
+/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/wasm-micro-runtime/CMakeFiles/install.dir
+/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/wasm-micro-runtime/CMakeFiles/install/local.dir
+/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/wasm-micro-runtime/CMakeFiles/install/strip.dir
+/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/main/CMakeFiles/__idf_main.dir
+/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/main/CMakeFiles/edit_cache.dir
+/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/main/CMakeFiles/rebuild_cache.dir
+/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/main/CMakeFiles/list_install_components.dir
+/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/main/CMakeFiles/install.dir
+/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/main/CMakeFiles/install/local.dir
+/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/main/CMakeFiles/install/strip.dir

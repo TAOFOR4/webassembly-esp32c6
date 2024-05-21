@@ -47,13 +47,13 @@ static void run_wasm(void)
         FATAL("m3_LoadModule: %s", result);
 
     IM3Function f;
-    result = m3_FindFunction(&f, runtime, "fib");
+    result = m3_FindFunction(&f, runtime, "main");
     if (result)
         FATAL("m3_FindFunction: %s", result);
 
     printf("Running...\n");
 
-    result = m3_CallV(f, 6);
+    result = m3_CallV(f);
     if (result)
         FATAL("m3_Call: %s", result);
 
@@ -75,7 +75,7 @@ extern "C" void app_main(void)
 
     printf("Elapsed: %ld ms\n", (end - start) * 1000 / CLOCKS_PER_SEC);
 
-    sleep(3);
+    sleep(5);
     printf("Restarting...\n\n\n");
     esp_restart();
 }
