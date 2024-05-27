@@ -8,16 +8,12 @@ fn panic(_info: &PanicInfo) -> ! {
     loop {}
 }
 
-extern "C" {
-    fn puts(input: *const u8) -> i32;
+fn sum_natural_numbers(n: u32) -> u32 {
+    (n * (n + 1)) / 2
 }
 
 #[no_mangle]
-fn main() {
-    let hello = "Hello Rust World!";
-    let hello_ptr: *const u8 = hello.as_ptr() as *const u8;
-
-    unsafe {
-        puts(hello_ptr);
-    }
+pub extern "C" fn main() -> u32 {
+    let n = 1000;
+    sum_natural_numbers(n)
 }

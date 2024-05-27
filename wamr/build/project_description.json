@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "wamr-simple",
-    "project_version":    "c37c6ee-dirty",
+    "project_version":    "f6ac194-dirty",
     "project_path":       "/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr",
     "idf_path":           "/opt/esp/v5.2.1/esp-idf",
     "build_dir":          "/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build",
@@ -11,7 +11,7 @@
     "app_elf":            "wamr-simple.elf",
     "app_bin":            "wamr-simple.bin",
     "build_type":         "flash_app",
-    "git_revision":       "v5.2.1-dirty",
+    "git_revision":       "v5.2.1",
     "target":             "esp32c6",
     "rev":                "",
     "min_rev":            "0",
