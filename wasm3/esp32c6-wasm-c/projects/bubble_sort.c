@@ -1,18 +1,36 @@
 #include <stdio.h>
 
-// Function to perform the bubble sort
-void bubbleSort()
+#define SIZE 100
+
+void bubbleSort(int arr[], int n)
 {
-    int arr[7] = {64, 34, 25, 12, 22, 11, 90};
     int i, j, temp;
-    for (i = 0; i < 6; i++)
-        // Last i elements are already in place
-        for (j = 0; j < 6 - i; j++)
+    for (i = 0; i < n - 1; i++)
+    {
+        for (j = 0; j < n - i - 1; j++)
+        {
             if (arr[j] > arr[j + 1])
             {
-                // swap arr[j] and arr[j+1]
+                // Swap arr[j] and arr[j+1]
                 temp = arr[j];
                 arr[j] = arr[j + 1];
                 arr[j + 1] = temp;
             }
+        }
+    }
+}
+
+int main()
+{
+    int arr[SIZE];
+
+    // Initialize the array with some values
+    for (int i = 0; i < SIZE; i++)
+    {
+        arr[i] = SIZE - i; // Example: Filling the array in descending order
+    }
+
+    bubbleSort(arr, SIZE);
+
+    return 0;
 }

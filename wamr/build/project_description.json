@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "wamr-simple",
-    "project_version":    "f6ac194-dirty",
+    "project_version":    "6766567-dirty",
     "project_path":       "/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr",
     "idf_path":           "/opt/esp/v5.2.1/esp-idf",
     "build_dir":          "/home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build",

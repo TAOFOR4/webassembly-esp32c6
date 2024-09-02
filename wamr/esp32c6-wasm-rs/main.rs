@@ -8,12 +8,25 @@ fn panic(_info: &PanicInfo) -> ! {
     loop {}
 }
 
-fn sum_natural_numbers(n: u32) -> u32 {
-    (n * (n + 1)) / 2
+#[no_mangle]
+pub extern "C" fn main() {
+    // Initialize the array with some values
+    let mut arr: [i32; 1000] = [0; 1000]; // Create an array of size 1000 initialized to 0
+
+    for i in 0..1000 {
+        arr[i] = (1000 - i) as i32; // Fill the array in descending order, cast to i32
+    }
+
+    bubble_sort(&mut arr);
 }
 
-#[no_mangle]
-pub extern "C" fn main() -> u32 {
-    let n = 1000;
-    sum_natural_numbers(n)
+fn bubble_sort(arr: &mut [i32]) {
+    let n = arr.len();
+    for i in 0..n {
+        for j in 0..n - i - 1 {
+            if arr[j] > arr[j + 1] {
+                arr.swap(j, j + 1);
+            }
+        }
+    }
 }

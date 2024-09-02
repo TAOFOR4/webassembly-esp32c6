@@ -31,7 +31,7 @@ Loading defaults file /home/tao/Desktop/webassembly-experiments/webassembly-esp3
 -- Found Python3: /home/tao/.espressif/python_env/idf5.2_py3.10_env/bin/python (found version "3.10.12") found components: Interpreter 
 -- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS
 -- Performing Test C_COMPILER_SUPPORTS_WFORMAT_SIGNEDNESS - Success
--- App "wamr-simple" version: f6ac194-dirty
+-- App "wamr-simple" version: 6766567-dirty
 -- Adding linker script /home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/esp_system/ld/memory.ld
 -- Adding linker script /opt/esp/v5.2.1/esp-idf/components/esp_system/ld/esp32c6/sections.ld.in
 -- Adding linker script /opt/esp/v5.2.1/esp-idf/components/esp_rom/esp32c6/ld/esp32c6.rom.ld

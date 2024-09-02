@@ -6,9 +6,10 @@
 //
 
 #include "esp_system.h"
+#include "esp_timer.h" // Include the esp_timer header for high-resolution timing
+#include "esp_sleep.h"
 
 #include <stdio.h>
-#include <time.h>
 #include <unistd.h>
 
 #include "wasm3.h"
@@ -53,6 +54,8 @@ static void run_wasm(void)
 
     printf("Running...\n");
 
+    int64_t start = esp_timer_get_time(); // Start the timer
+
     result = m3_CallV(f);
     if (result)
         FATAL("m3_Call: %s", result);
@@ -62,20 +65,21 @@ static void run_wasm(void)
     if (result)
         FATAL("m3_GetResults: %s", result);
 
+    int64_t end = esp_timer_get_time(); // End the timer
+
     printf("Result: %u\n", value);
+    printf("Elapsed: %lld ms\n", (end - start)); // microseconds
 }
 
 extern "C" void app_main(void)
 {
     printf("\nWasm3 v" M3_VERSION " on " CONFIG_IDF_TARGET ", build " __DATE__ " " __TIME__ "\n");
 
-    clock_t start = clock();
-    run_wasm();
-    clock_t end = clock();
+    sleep(5);
 
-    printf("Elapsed: %ld ms\n", (end - start) * 1000 / CLOCKS_PER_SEC);
+    run_wasm();
 
     sleep(5);
-    printf("Restarting...\n\n\n");
-    esp_restart();
+
+    esp_deep_sleep_start();
 }

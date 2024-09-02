@@ -1,5 +1,5 @@
 [1/5] cd /home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/esp-idf/esptool_py && /home/tao/.espressif/python_env/idf5.2_py3.10_env/bin/python /opt/esp/v5.2.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/partition_table/partition-table.bin /home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/wamr-simple.bin
-wamr-simple.bin binary size 0x6f700 bytes. Smallest app partition is 0x100000 bytes. 0x90900 bytes (56%) free.
+wamr-simple.bin binary size 0x6f980 bytes. Smallest app partition is 0x100000 bytes. 0x90680 bytes (56%) free.
 [2/5] Performing build step for 'bootloader'
 [1/1] cd /home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/bootloader/esp-idf/esptool_py && /home/tao/.espressif/python_env/idf5.2_py3.10_env/bin/python /opt/esp/v5.2.1/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/tao/Desktop/webassembly-experiments/webassembly-esp32c6/wamr/build/bootloader/bootloader.bin
 Bootloader binary size 0x54e0 bytes. 0x2b20 bytes (34%) free.
@@ -23,31 +23,31 @@ Configuring flash size...
 Flash will be erased from 0x00000000 to 0x00005fff...
 Flash will be erased from 0x00010000 to 0x0007ffff...
 Flash will be erased from 0x00008000 to 0x00008fff...
-Compressed 21728 bytes to 13093...
+Compressed 21728 bytes to 13090...
 Writing at 0x00000000... (100 %)
-Wrote 21728 bytes (13093 compressed) at 0x00000000 in 0.6 seconds (effective 301.7 kbit/s)...
+Wrote 21728 bytes (13090 compressed) at 0x00000000 in 0.6 seconds (effective 279.9 kbit/s)...
 Hash of data verified.
-Compressed 456448 bytes to 239482...
+Compressed 457088 bytes to 240163...
 Writing at 0x00010000... (6 %)
-Writing at 0x0001c9b1... (13 %)
-Writing at 0x00024cfc... (20 %)
-Writing at 0x0002b779... (26 %)
-Writing at 0x0003282d... (33 %)
-Writing at 0x000390ce... (40 %)
-Writing at 0x0003fcad... (46 %)
-Writing at 0x00048e39... (53 %)
-Writing at 0x0004fee9... (60 %)
-Writing at 0x000577af... (66 %)
-Writing at 0x0005f147... (73 %)
-Writing at 0x00065da5... (80 %)
-Writing at 0x0006cab0... (86 %)
-Writing at 0x00073e47... (93 %)
-Writing at 0x0007abaf... (100 %)
-Wrote 456448 bytes (239482 compressed) at 0x00010000 in 5.6 seconds (effective 650.4 kbit/s)...
+Writing at 0x0001c98e... (13 %)
+Writing at 0x00024cc7... (20 %)
+Writing at 0x0002b746... (26 %)
+Writing at 0x000327ea... (33 %)
+Writing at 0x0003907d... (40 %)
+Writing at 0x0003fc70... (46 %)
+Writing at 0x00048db3... (53 %)
+Writing at 0x0004fe8c... (60 %)
+Writing at 0x00057609... (66 %)
+Writing at 0x0005effd... (73 %)
+Writing at 0x00065c16... (80 %)
+Writing at 0x0006c8bb... (86 %)
+Writing at 0x00073cf8... (93 %)
+Writing at 0x0007aa26... (100 %)
+Wrote 457088 bytes (240163 compressed) at 0x00010000 in 5.7 seconds (effective 640.8 kbit/s)...
 Hash of data verified.
 Compressed 3072 bytes to 103...
 Writing at 0x00008000... (100 %)
-Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 547.1 kbit/s)...
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.1 seconds (effective 491.2 kbit/s)...
 Hash of data verified.
 
 Leaving...

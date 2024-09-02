@@ -27,6 +27,8 @@ static void *app_instance_main(wasm_module_inst_t module_inst)
 
 void *iwasm_main(void *arg)
 {
+    sleep(5);
+
     (void)arg; // unused
     // setup variables for instantiating and running the wasm module
     uint8_t *wasm_file_buf = NULL;
@@ -77,15 +79,14 @@ void *iwasm_main(void *arg)
         goto fail2interp;
     }
 
-    int64_t startTime = esp_timer_get_time(); // Capture start time
-
     ESP_LOGI(LOG_TAG, "run main() of the application");
+    int64_t start = esp_timer_get_time(); // Capture start time
     ret = app_instance_main(wasm_module_inst);
+    int64_t end = esp_timer_get_time(); // Capture end time
     assert(!ret);
 
-    int64_t endTime = esp_timer_get_time();      // Capture end time
-    int64_t executionTime = endTime - startTime; // Calculate execution time
-    ESP_LOGI(LOG_TAG, "Execution time: %lld microseconds", executionTime);
+    int64_t executionTime = end - start; // Calculate execution time
+    printf("Elapsed: %lld ms\n", executionTime);
 
     // destroy the module instance
     ESP_LOGI(LOG_TAG, "Deinstantiate WASM runtime");
@@ -102,9 +103,6 @@ fail1interp:
     wasm_runtime_destroy();
 
     sleep(5);
-
-    printf("Restarting...\n\n\n");
-    esp_restart();
 
     return NULL;
 }

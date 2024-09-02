@@ -8,24 +8,25 @@ fn panic(_info: &PanicInfo) -> ! {
     loop {}
 }
 
-fn bubble_sort(arr: &mut [u32]) {
-    let len = arr.len();
-    for _ in 0..len {
-        let mut swapped = false;
-        for j in 1..len {
-            if arr[j - 1] > arr[j] {
-                arr.swap(j - 1, j);
-                swapped = true;
-            }
-        }
-        if !swapped {
-            break;
-        }
+#[no_mangle]
+pub extern "C" fn main() {
+    // Initialize the array with some values
+    let mut arr: [i32; 100] = [0; 100]; // Create an array of size 1000 initialized to 0
+
+    for i in 0..100 {
+        arr[i] = (100 - i) as i32; // Fill the array in descending order, cast to i32
     }
+
+    bubble_sort(&mut arr);
 }
 
-#[no_mangle]
-pub extern "C" fn main() -> () {
-    let mut numbers = [64, 34, 25, 12, 22, 11, 90];
-    bubble_sort(&mut numbers);
+fn bubble_sort(arr: &mut [i32]) {
+    let n = arr.len();
+    for i in 0..n {
+        for j in 0..n - i - 1 {
+            if arr[j] > arr[j + 1] {
+                arr.swap(j, j + 1);
+            }
+        }
+    }
 }
